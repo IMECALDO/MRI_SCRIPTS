@@ -1,0 +1,34 @@
+{
+  "descriptions": [
+   {
+      "datatype": "anat",
+      "suffix": "T1w",
+      "criteria": {
+        "SeriesDescription": "3D Sag T1 MP-RAGE"
+       }
+    },
+    {
+      "id": "task_rest",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-rest",
+      "criteria": {
+        "SeriesDescription": "Ax fMRI Resting State HB"
+      },
+	"sidecar_changes":{
+	"TaskName": "rest"
+	}
+    },
+    {
+      "datatype": "fmap",
+      "suffix": "epi",
+      "acq":"rest",
+      "criteria": {
+        "SeriesDescription": "Ax fMRI RS HB pepolar"
+      },
+      "sidecar_changes": {
+        "IntendedFor": "task_rest"
+      }
+    }
+  ]
+}
