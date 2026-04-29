@@ -1,4 +1,4 @@
-# MRI_SCRIPTS
+# MRI SCRIPTS
 Scripts to run MRI analysis.
 
 # Some scripts have two versions available to them, being able to run in the cluster or in the local machine
